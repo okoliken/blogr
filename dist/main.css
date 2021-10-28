@@ -1,0 +1,35 @@
+body{
+    font-family:'Barlow';
+}
+.mobile-nav{
+    animation:slide .2s ease-in ;
+    transition: opacity .1s;
+}
+
+@keyframes slide {
+    from{
+        opacity: 0.9;
+        transform:translateX(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-out-mobile-nav{
+    animation:faseout 1s ease-out ;
+    transition: opacity .1s;
+    display: flex;
+}
+
+@keyframes faseout {
+    from{
+        opacity: 1;
+        transform:translateX(0px);
+    }
+    to{
+        opacity: 0.9;
+        transform: translateX(-500px);
+    }
+}
